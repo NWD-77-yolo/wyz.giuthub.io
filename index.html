@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>特朗普词云图</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>词云图</title>
     <style>
         body {
-            background: #f6f6f8; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            margin: 0; 
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #000;
         }
-        .photo-container {
-            max-width: 90%; 
-            /* 修正box-shadow语法错误 */
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
-            border: 10px solid white; 
-        }
-        .photo-container img {
-            display: block; 
-            max-width: 100%; 
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div class="photo-container">
-        <!-- 使用英文文件名确保兼容性 -->
-        <img src="./images/trump-wordcloud.png" alt="特朗普词云图">
-    </div>
+    < img src="./images/trump-wordcloud.png" alt="词云图">
 </body>
-</html>
+</html> 
